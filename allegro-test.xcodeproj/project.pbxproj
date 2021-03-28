@@ -1,0 +1,717 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		047C2E60247A191A00B2F258 /* StartScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 047C2E5E247A191A00B2F258 /* StartScene.cpp */; };
+		047C2E63247A40FA00B2F258 /* NewBullet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 047C2E61247A40FA00B2F258 /* NewBullet.cpp */; };
+		047C2E66247A449500B2F258 /* NewGunTurret.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 047C2E64247A449500B2F258 /* NewGunTurret.cpp */; };
+		047C2E69247A502200B2F258 /* NewEnemy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 047C2E67247A502200B2F258 /* NewEnemy.cpp */; };
+		04E49F03247979EC00D6DB36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04E49F02247979EC00D6DB36 /* Assets.xcassets */; };
+		04E49F06247979EC00D6DB36 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04E49F04247979EC00D6DB36 /* MainMenu.xib */; };
+		04E49F1E24797C0000D6DB36 /* liballegro.5.2.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 04E49F1124797C0000D6DB36 /* liballegro.5.2.6.dylib */; };
+		04E49F1F24797C0100D6DB36 /* liballegro.5.2.6.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 04E49F1124797C0000D6DB36 /* liballegro.5.2.6.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		04E49F2024797C0100D6DB36 /* liballegro_acodec.5.2.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 04E49F1224797C0000D6DB36 /* liballegro_acodec.5.2.6.dylib */; };
+		04E49F2124797C0100D6DB36 /* liballegro_acodec.5.2.6.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 04E49F1224797C0000D6DB36 /* liballegro_acodec.5.2.6.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		04E49F2224797C0100D6DB36 /* liballegro_dialog.5.2.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 04E49F1324797C0000D6DB36 /* liballegro_dialog.5.2.6.dylib */; };
+		04E49F2324797C0100D6DB36 /* liballegro_dialog.5.2.6.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 04E49F1324797C0000D6DB36 /* liballegro_dialog.5.2.6.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		04E49F2424797C0100D6DB36 /* liballegro_memfile.5.2.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 04E49F1424797C0000D6DB36 /* liballegro_memfile.5.2.6.dylib */; };
+		04E49F2524797C0100D6DB36 /* liballegro_memfile.5.2.6.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 04E49F1424797C0000D6DB36 /* liballegro_memfile.5.2.6.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		04E49F2624797C0100D6DB36 /* liballegro_ttf.5.2.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 04E49F1524797C0000D6DB36 /* liballegro_ttf.5.2.6.dylib */; };
+		04E49F2724797C0100D6DB36 /* liballegro_ttf.5.2.6.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 04E49F1524797C0000D6DB36 /* liballegro_ttf.5.2.6.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		04E49F2824797C0100D6DB36 /* liballegro_audio.5.2.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 04E49F1624797C0000D6DB36 /* liballegro_audio.5.2.6.dylib */; };
+		04E49F2924797C0100D6DB36 /* liballegro_audio.5.2.6.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 04E49F1624797C0000D6DB36 /* liballegro_audio.5.2.6.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		04E49F2A24797C0100D6DB36 /* liballegro_font.5.2.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 04E49F1724797C0000D6DB36 /* liballegro_font.5.2.6.dylib */; };
+		04E49F2B24797C0100D6DB36 /* liballegro_font.5.2.6.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 04E49F1724797C0000D6DB36 /* liballegro_font.5.2.6.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		04E49F2C24797C0100D6DB36 /* liballegro_physfs.5.2.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 04E49F1824797C0000D6DB36 /* liballegro_physfs.5.2.6.dylib */; };
+		04E49F2D24797C0100D6DB36 /* liballegro_physfs.5.2.6.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 04E49F1824797C0000D6DB36 /* liballegro_physfs.5.2.6.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		04E49F2E24797C0100D6DB36 /* liballegro_video.5.2.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 04E49F1924797C0000D6DB36 /* liballegro_video.5.2.6.dylib */; };
+		04E49F2F24797C0100D6DB36 /* liballegro_video.5.2.6.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 04E49F1924797C0000D6DB36 /* liballegro_video.5.2.6.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		04E49F3024797C0100D6DB36 /* liballegro_main.5.2.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 04E49F1A24797C0000D6DB36 /* liballegro_main.5.2.6.dylib */; };
+		04E49F3124797C0100D6DB36 /* liballegro_main.5.2.6.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 04E49F1A24797C0000D6DB36 /* liballegro_main.5.2.6.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		04E49F3224797C0100D6DB36 /* liballegro_color.5.2.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 04E49F1B24797C0000D6DB36 /* liballegro_color.5.2.6.dylib */; };
+		04E49F3324797C0100D6DB36 /* liballegro_color.5.2.6.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 04E49F1B24797C0000D6DB36 /* liballegro_color.5.2.6.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		04E49F3424797C0100D6DB36 /* liballegro_image.5.2.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 04E49F1C24797C0000D6DB36 /* liballegro_image.5.2.6.dylib */; };
+		04E49F3524797C0100D6DB36 /* liballegro_image.5.2.6.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 04E49F1C24797C0000D6DB36 /* liballegro_image.5.2.6.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		04E49F3624797C0100D6DB36 /* liballegro_primitives.5.2.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 04E49F1D24797C0000D6DB36 /* liballegro_primitives.5.2.6.dylib */; };
+		04E49F3724797C0100D6DB36 /* liballegro_primitives.5.2.6.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 04E49F1D24797C0000D6DB36 /* liballegro_primitives.5.2.6.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		04E49F4A24797E2900D6DB36 /* Bullet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04E49F3C24797E2900D6DB36 /* Bullet.cpp */; };
+		04E49F4B24797E2900D6DB36 /* ClassDiagram2.cd in Resources */ = {isa = PBXBuildFile; fileRef = 04E49F3F24797E2900D6DB36 /* ClassDiagram2.cd */; };
+		04E49F4C24797E2900D6DB36 /* ClassDiagram.cd in Resources */ = {isa = PBXBuildFile; fileRef = 04E49F4024797E2900D6DB36 /* ClassDiagram.cd */; };
+		04E49F4D24797E2900D6DB36 /* DirtyEffect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04E49F4224797E2900D6DB36 /* DirtyEffect.cpp */; };
+		04E49F4E24797E2900D6DB36 /* Enemy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04E49F4424797E2900D6DB36 /* Enemy.cpp */; };
+		04E49F4F24797E2900D6DB36 /* Allegro5Exception.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04E49F4624797E2900D6DB36 /* Allegro5Exception.cpp */; };
+		04E49F5024797E2900D6DB36 /* AudioHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04E49F4724797E2900D6DB36 /* AudioHelper.cpp */; };
+		04E49F5124797E2900D6DB36 /* Collider.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04E49F4824797E2900D6DB36 /* Collider.cpp */; };
+		04E49F5224797E2900D6DB36 /* ClassDiagram1.cd in Resources */ = {isa = PBXBuildFile; fileRef = 04E49F4924797E2900D6DB36 /* ClassDiagram1.cd */; };
+		04E49F9924797E4A00D6DB36 /* ImageButton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04E49F5424797E4700D6DB36 /* ImageButton.cpp */; };
+		04E49F9A24797E4A00D6DB36 /* Slider.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04E49F5524797E4700D6DB36 /* Slider.cpp */; };
+		04E49F9B24797E4A00D6DB36 /* WinScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04E49F5924797E4700D6DB36 /* WinScene.cpp */; };
+		04E49F9C24797E4A00D6DB36 /* GameClassDiagram.cd in Resources */ = {isa = PBXBuildFile; fileRef = 04E49F5B24797E4700D6DB36 /* GameClassDiagram.cd */; };
+		04E49F9D24797E4A00D6DB36 /* IControl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04E49F5D24797E4700D6DB36 /* IControl.cpp */; };
+		04E49F9E24797E4A00D6DB36 /* Resources.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04E49F5E24797E4700D6DB36 /* Resources.cpp */; };
+		04E49F9F24797E4A00D6DB36 /* PlayScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04E49F6024797E4700D6DB36 /* PlayScene.cpp */; };
+		04E49FA024797E4A00D6DB36 /* LoseScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04E49F6124797E4700D6DB36 /* LoseScene.cpp */; };
+		04E49FA124797E4A00D6DB36 /* Image.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04E49F6224797E4700D6DB36 /* Image.cpp */; };
+		04E49FA224797E4A00D6DB36 /* TowerDefense.vcxproj in Resources */ = {isa = PBXBuildFile; fileRef = 04E49F6324797E4700D6DB36 /* TowerDefense.vcxproj */; };
+		04E49FA324797E4A00D6DB36 /* Turret.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04E49F6724797E4800D6DB36 /* Turret.cpp */; };
+		04E49FA424797E4A00D6DB36 /* GameClassDiagramMinimized.cd in Resources */ = {isa = PBXBuildFile; fileRef = 04E49F6E24797E4800D6DB36 /* GameClassDiagramMinimized.cd */; };
+		04E49FA524797E4A00D6DB36 /* EngineClassDiagramMinimized.cd in Resources */ = {isa = PBXBuildFile; fileRef = 04E49F6F24797E4800D6DB36 /* EngineClassDiagramMinimized.cd */; };
+		04E49FA624797E4A00D6DB36 /* IScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04E49F7024797E4800D6DB36 /* IScene.cpp */; };
+		04E49FA724797E4A00D6DB36 /* Sprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04E49F7124797E4800D6DB36 /* Sprite.cpp */; };
+		04E49FA824797E4A00D6DB36 /* EngineClassDiagram.cd in Resources */ = {isa = PBXBuildFile; fileRef = 04E49F7224797E4800D6DB36 /* EngineClassDiagram.cd */; };
+		04E49FA924797E4A00D6DB36 /* IObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04E49F7324797E4800D6DB36 /* IObject.cpp */; };
+		04E49FAA24797E4A00D6DB36 /* Label.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04E49F7424797E4800D6DB36 /* Label.cpp */; };
+		04E49FAB24797E4A00D6DB36 /* SoldierEnemy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04E49F7624797E4800D6DB36 /* SoldierEnemy.cpp */; };
+		04E49FAC24797E4A00D6DB36 /* PlaneEnemy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04E49F7724797E4800D6DB36 /* PlaneEnemy.cpp */; };
+		04E49FAD24797E4A00D6DB36 /* Point.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04E49F7C24797E4900D6DB36 /* Point.cpp */; };
+		04E49FAE24797E4A00D6DB36 /* packages.config in Resources */ = {isa = PBXBuildFile; fileRef = 04E49F7D24797E4900D6DB36 /* packages.config */; };
+		04E49FAF24797E4A00D6DB36 /* MissileTurret.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04E49F8024797E4900D6DB36 /* MissileTurret.cpp */; };
+		04E49FB024797E4A00D6DB36 /* MissileBullet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04E49F8124797E4900D6DB36 /* MissileBullet.cpp */; };
+		04E49FB124797E4A00D6DB36 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = 04E49F8224797E4900D6DB36 /* Makefile */; };
+		04E49FB224797E4A00D6DB36 /* LOG.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04E49F8424797E4900D6DB36 /* LOG.cpp */; };
+		04E49FB324797E4A00D6DB36 /* resources in Resources */ = {isa = PBXBuildFile; fileRef = 04E49F8524797E4900D6DB36 /* resources */; };
+		04E49FB424797E4A00D6DB36 /* GameEngine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04E49F8724797E4900D6DB36 /* GameEngine.cpp */; };
+		04E49FB524797E4A00D6DB36 /* LaserTurret.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04E49F8824797E4900D6DB36 /* LaserTurret.cpp */; };
+		04E49FB624797E4A00D6DB36 /* FireBullet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04E49F8924797E4900D6DB36 /* FireBullet.cpp */; };
+		04E49FB724797E4A00D6DB36 /* TurretButton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04E49F8C24797E4900D6DB36 /* TurretButton.cpp */; };
+		04E49FB824797E4A00D6DB36 /* Plane.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04E49F8D24797E4900D6DB36 /* Plane.cpp */; };
+		04E49FB924797E4A00D6DB36 /* LaserBullet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04E49F8E24797E4900D6DB36 /* LaserBullet.cpp */; };
+		04E49FBA24797E4A00D6DB36 /* MachineGunTurret.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04E49F9124797E4A00D6DB36 /* MachineGunTurret.cpp */; };
+		04E49FBB24797E4A00D6DB36 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04E49F9224797E4A00D6DB36 /* main.cpp */; };
+		04E49FBC24797E4A00D6DB36 /* ExplosionEffect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04E49F9424797E4A00D6DB36 /* ExplosionEffect.cpp */; };
+		04E49FBD24797E4A00D6DB36 /* Group.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04E49F9524797E4A00D6DB36 /* Group.cpp */; };
+		04E49FBE24797E4A00D6DB36 /* StageSelectScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04E49F9624797E4A00D6DB36 /* StageSelectScene.cpp */; };
+		04E49FBF24797E4A00D6DB36 /* TankEnemy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04E49F9724797E4A00D6DB36 /* TankEnemy.cpp */; };
+		04E49FC024797E4A00D6DB36 /* TowerDefense.vcxproj.filters in Resources */ = {isa = PBXBuildFile; fileRef = 04E49F9824797E4A00D6DB36 /* TowerDefense.vcxproj.filters */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		04E49F3824797C0100D6DB36 /* Embed Libraries */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				04E49F3524797C0100D6DB36 /* liballegro_image.5.2.6.dylib in Embed Libraries */,
+				04E49F2324797C0100D6DB36 /* liballegro_dialog.5.2.6.dylib in Embed Libraries */,
+				04E49F3724797C0100D6DB36 /* liballegro_primitives.5.2.6.dylib in Embed Libraries */,
+				04E49F2B24797C0100D6DB36 /* liballegro_font.5.2.6.dylib in Embed Libraries */,
+				04E49F1F24797C0100D6DB36 /* liballegro.5.2.6.dylib in Embed Libraries */,
+				04E49F2724797C0100D6DB36 /* liballegro_ttf.5.2.6.dylib in Embed Libraries */,
+				04E49F2F24797C0100D6DB36 /* liballegro_video.5.2.6.dylib in Embed Libraries */,
+				04E49F3124797C0100D6DB36 /* liballegro_main.5.2.6.dylib in Embed Libraries */,
+				04E49F2924797C0100D6DB36 /* liballegro_audio.5.2.6.dylib in Embed Libraries */,
+				04E49F2524797C0100D6DB36 /* liballegro_memfile.5.2.6.dylib in Embed Libraries */,
+				04E49F2124797C0100D6DB36 /* liballegro_acodec.5.2.6.dylib in Embed Libraries */,
+				04E49F2D24797C0100D6DB36 /* liballegro_physfs.5.2.6.dylib in Embed Libraries */,
+				04E49F3324797C0100D6DB36 /* liballegro_color.5.2.6.dylib in Embed Libraries */,
+			);
+			name = "Embed Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		047C2E5E247A191A00B2F258 /* StartScene.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = StartScene.cpp; sourceTree = "<group>"; };
+		047C2E5F247A191A00B2F258 /* StartScene.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = StartScene.hpp; sourceTree = "<group>"; };
+		047C2E61247A40FA00B2F258 /* NewBullet.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = NewBullet.cpp; sourceTree = "<group>"; };
+		047C2E62247A40FA00B2F258 /* NewBullet.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = NewBullet.hpp; sourceTree = "<group>"; };
+		047C2E64247A449500B2F258 /* NewGunTurret.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = NewGunTurret.cpp; sourceTree = "<group>"; };
+		047C2E65247A449500B2F258 /* NewGunTurret.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = NewGunTurret.hpp; sourceTree = "<group>"; };
+		047C2E67247A502200B2F258 /* NewEnemy.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = NewEnemy.cpp; sourceTree = "<group>"; };
+		047C2E68247A502200B2F258 /* NewEnemy.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = NewEnemy.hpp; sourceTree = "<group>"; };
+		04E49EFC247979E800D6DB36 /* allegro-test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "allegro-test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		04E49F02247979EC00D6DB36 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04E49F05247979EC00D6DB36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		04E49F07247979EC00D6DB36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04E49F0A247979EC00D6DB36 /* allegro_test.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = allegro_test.entitlements; sourceTree = "<group>"; };
+		04E49F1124797C0000D6DB36 /* liballegro.5.2.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro.5.2.6.dylib; path = ../../../../usr/local/Cellar/allegro/5.2.6.0/lib/liballegro.5.2.6.dylib; sourceTree = "<group>"; };
+		04E49F1224797C0000D6DB36 /* liballegro_acodec.5.2.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_acodec.5.2.6.dylib; path = ../../../../usr/local/Cellar/allegro/5.2.6.0/lib/liballegro_acodec.5.2.6.dylib; sourceTree = "<group>"; };
+		04E49F1324797C0000D6DB36 /* liballegro_dialog.5.2.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_dialog.5.2.6.dylib; path = ../../../../usr/local/Cellar/allegro/5.2.6.0/lib/liballegro_dialog.5.2.6.dylib; sourceTree = "<group>"; };
+		04E49F1424797C0000D6DB36 /* liballegro_memfile.5.2.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_memfile.5.2.6.dylib; path = ../../../../usr/local/Cellar/allegro/5.2.6.0/lib/liballegro_memfile.5.2.6.dylib; sourceTree = "<group>"; };
+		04E49F1524797C0000D6DB36 /* liballegro_ttf.5.2.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_ttf.5.2.6.dylib; path = ../../../../usr/local/Cellar/allegro/5.2.6.0/lib/liballegro_ttf.5.2.6.dylib; sourceTree = "<group>"; };
+		04E49F1624797C0000D6DB36 /* liballegro_audio.5.2.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_audio.5.2.6.dylib; path = ../../../../usr/local/Cellar/allegro/5.2.6.0/lib/liballegro_audio.5.2.6.dylib; sourceTree = "<group>"; };
+		04E49F1724797C0000D6DB36 /* liballegro_font.5.2.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_font.5.2.6.dylib; path = ../../../../usr/local/Cellar/allegro/5.2.6.0/lib/liballegro_font.5.2.6.dylib; sourceTree = "<group>"; };
+		04E49F1824797C0000D6DB36 /* liballegro_physfs.5.2.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_physfs.5.2.6.dylib; path = ../../../../usr/local/Cellar/allegro/5.2.6.0/lib/liballegro_physfs.5.2.6.dylib; sourceTree = "<group>"; };
+		04E49F1924797C0000D6DB36 /* liballegro_video.5.2.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_video.5.2.6.dylib; path = ../../../../usr/local/Cellar/allegro/5.2.6.0/lib/liballegro_video.5.2.6.dylib; sourceTree = "<group>"; };
+		04E49F1A24797C0000D6DB36 /* liballegro_main.5.2.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_main.5.2.6.dylib; path = ../../../../usr/local/Cellar/allegro/5.2.6.0/lib/liballegro_main.5.2.6.dylib; sourceTree = "<group>"; };
+		04E49F1B24797C0000D6DB36 /* liballegro_color.5.2.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_color.5.2.6.dylib; path = ../../../../usr/local/Cellar/allegro/5.2.6.0/lib/liballegro_color.5.2.6.dylib; sourceTree = "<group>"; };
+		04E49F1C24797C0000D6DB36 /* liballegro_image.5.2.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_image.5.2.6.dylib; path = ../../../../usr/local/Cellar/allegro/5.2.6.0/lib/liballegro_image.5.2.6.dylib; sourceTree = "<group>"; };
+		04E49F1D24797C0000D6DB36 /* liballegro_primitives.5.2.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_primitives.5.2.6.dylib; path = ../../../../usr/local/Cellar/allegro/5.2.6.0/lib/liballegro_primitives.5.2.6.dylib; sourceTree = "<group>"; };
+		04E49F3B24797E2900D6DB36 /* Collider.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Collider.hpp; path = ../../../Downloads/TowerDefense/TowerDefense/Collider.hpp; sourceTree = "<group>"; };
+		04E49F3C24797E2900D6DB36 /* Bullet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Bullet.cpp; path = ../../../Downloads/TowerDefense/TowerDefense/Bullet.cpp; sourceTree = "<group>"; };
+		04E49F3D24797E2900D6DB36 /* DirtyEffect.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = DirtyEffect.hpp; path = ../../../Downloads/TowerDefense/TowerDefense/DirtyEffect.hpp; sourceTree = "<group>"; };
+		04E49F3E24797E2900D6DB36 /* AudioHelper.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = AudioHelper.hpp; path = ../../../Downloads/TowerDefense/TowerDefense/AudioHelper.hpp; sourceTree = "<group>"; };
+		04E49F3F24797E2900D6DB36 /* ClassDiagram2.cd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = ClassDiagram2.cd; path = ../../../Downloads/TowerDefense/TowerDefense/ClassDiagram2.cd; sourceTree = "<group>"; };
+		04E49F4024797E2900D6DB36 /* ClassDiagram.cd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = ClassDiagram.cd; path = ../../../Downloads/TowerDefense/TowerDefense/ClassDiagram.cd; sourceTree = "<group>"; };
+		04E49F4124797E2900D6DB36 /* Enemy.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Enemy.hpp; path = ../../../Downloads/TowerDefense/TowerDefense/Enemy.hpp; sourceTree = "<group>"; };
+		04E49F4224797E2900D6DB36 /* DirtyEffect.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = DirtyEffect.cpp; path = ../../../Downloads/TowerDefense/TowerDefense/DirtyEffect.cpp; sourceTree = "<group>"; };
+		04E49F4324797E2900D6DB36 /* Bullet.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Bullet.hpp; path = ../../../Downloads/TowerDefense/TowerDefense/Bullet.hpp; sourceTree = "<group>"; };
+		04E49F4424797E2900D6DB36 /* Enemy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Enemy.cpp; path = ../../../Downloads/TowerDefense/TowerDefense/Enemy.cpp; sourceTree = "<group>"; };
+		04E49F4524797E2900D6DB36 /* Allegro5Exception.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Allegro5Exception.hpp; path = ../../../Downloads/TowerDefense/TowerDefense/Allegro5Exception.hpp; sourceTree = "<group>"; };
+		04E49F4624797E2900D6DB36 /* Allegro5Exception.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Allegro5Exception.cpp; path = ../../../Downloads/TowerDefense/TowerDefense/Allegro5Exception.cpp; sourceTree = "<group>"; };
+		04E49F4724797E2900D6DB36 /* AudioHelper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AudioHelper.cpp; path = ../../../Downloads/TowerDefense/TowerDefense/AudioHelper.cpp; sourceTree = "<group>"; };
+		04E49F4824797E2900D6DB36 /* Collider.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Collider.cpp; path = ../../../Downloads/TowerDefense/TowerDefense/Collider.cpp; sourceTree = "<group>"; };
+		04E49F4924797E2900D6DB36 /* ClassDiagram1.cd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = ClassDiagram1.cd; path = ../../../Downloads/TowerDefense/TowerDefense/ClassDiagram1.cd; sourceTree = "<group>"; };
+		04E49F5324797E4700D6DB36 /* IObject.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = IObject.hpp; path = ../../../Downloads/TowerDefense/TowerDefense/IObject.hpp; sourceTree = "<group>"; };
+		04E49F5424797E4700D6DB36 /* ImageButton.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ImageButton.cpp; path = ../../../Downloads/TowerDefense/TowerDefense/ImageButton.cpp; sourceTree = "<group>"; };
+		04E49F5524797E4700D6DB36 /* Slider.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Slider.cpp; path = ../../../Downloads/TowerDefense/TowerDefense/Slider.cpp; sourceTree = "<group>"; };
+		04E49F5624797E4700D6DB36 /* TankEnemy.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = TankEnemy.hpp; path = ../../../Downloads/TowerDefense/TowerDefense/TankEnemy.hpp; sourceTree = "<group>"; };
+		04E49F5724797E4700D6DB36 /* LaserBullet.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = LaserBullet.hpp; path = ../../../Downloads/TowerDefense/TowerDefense/LaserBullet.hpp; sourceTree = "<group>"; };
+		04E49F5824797E4700D6DB36 /* Image.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Image.hpp; path = ../../../Downloads/TowerDefense/TowerDefense/Image.hpp; sourceTree = "<group>"; };
+		04E49F5924797E4700D6DB36 /* WinScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = WinScene.cpp; path = ../../../Downloads/TowerDefense/TowerDefense/WinScene.cpp; sourceTree = "<group>"; };
+		04E49F5A24797E4700D6DB36 /* WinScene.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = WinScene.hpp; path = ../../../Downloads/TowerDefense/TowerDefense/WinScene.hpp; sourceTree = "<group>"; };
+		04E49F5B24797E4700D6DB36 /* GameClassDiagram.cd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = GameClassDiagram.cd; path = ../../../Downloads/TowerDefense/TowerDefense/GameClassDiagram.cd; sourceTree = "<group>"; };
+		04E49F5C24797E4700D6DB36 /* LoseScene.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = LoseScene.hpp; path = ../../../Downloads/TowerDefense/TowerDefense/LoseScene.hpp; sourceTree = "<group>"; };
+		04E49F5D24797E4700D6DB36 /* IControl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IControl.cpp; path = ../../../Downloads/TowerDefense/TowerDefense/IControl.cpp; sourceTree = "<group>"; };
+		04E49F5E24797E4700D6DB36 /* Resources.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Resources.cpp; path = ../../../Downloads/TowerDefense/TowerDefense/Resources.cpp; sourceTree = "<group>"; };
+		04E49F5F24797E4700D6DB36 /* ExplosionEffect.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = ExplosionEffect.hpp; path = ../../../Downloads/TowerDefense/TowerDefense/ExplosionEffect.hpp; sourceTree = "<group>"; };
+		04E49F6024797E4700D6DB36 /* PlayScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PlayScene.cpp; path = ../../../Downloads/TowerDefense/TowerDefense/PlayScene.cpp; sourceTree = "<group>"; };
+		04E49F6124797E4700D6DB36 /* LoseScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = LoseScene.cpp; path = ../../../Downloads/TowerDefense/TowerDefense/LoseScene.cpp; sourceTree = "<group>"; };
+		04E49F6224797E4700D6DB36 /* Image.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Image.cpp; path = ../../../Downloads/TowerDefense/TowerDefense/Image.cpp; sourceTree = "<group>"; };
+		04E49F6324797E4700D6DB36 /* TowerDefense.vcxproj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = TowerDefense.vcxproj; path = ../../../Downloads/TowerDefense/TowerDefense/TowerDefense.vcxproj; sourceTree = "<group>"; };
+		04E49F6424797E4700D6DB36 /* TurretButton.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = TurretButton.hpp; path = ../../../Downloads/TowerDefense/TowerDefense/TurretButton.hpp; sourceTree = "<group>"; };
+		04E49F6524797E4800D6DB36 /* Group.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Group.hpp; path = ../../../Downloads/TowerDefense/TowerDefense/Group.hpp; sourceTree = "<group>"; };
+		04E49F6624797E4800D6DB36 /* Turret.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Turret.hpp; path = ../../../Downloads/TowerDefense/TowerDefense/Turret.hpp; sourceTree = "<group>"; };
+		04E49F6724797E4800D6DB36 /* Turret.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Turret.cpp; path = ../../../Downloads/TowerDefense/TowerDefense/Turret.cpp; sourceTree = "<group>"; };
+		04E49F6824797E4800D6DB36 /* Label.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Label.hpp; path = ../../../Downloads/TowerDefense/TowerDefense/Label.hpp; sourceTree = "<group>"; };
+		04E49F6924797E4800D6DB36 /* LOG.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = LOG.hpp; path = ../../../Downloads/TowerDefense/TowerDefense/LOG.hpp; sourceTree = "<group>"; };
+		04E49F6A24797E4800D6DB36 /* MissileBullet.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = MissileBullet.hpp; path = ../../../Downloads/TowerDefense/TowerDefense/MissileBullet.hpp; sourceTree = "<group>"; };
+		04E49F6B24797E4800D6DB36 /* LaserTurret.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = LaserTurret.hpp; path = ../../../Downloads/TowerDefense/TowerDefense/LaserTurret.hpp; sourceTree = "<group>"; };
+		04E49F6C24797E4800D6DB36 /* Sprite.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Sprite.hpp; path = ../../../Downloads/TowerDefense/TowerDefense/Sprite.hpp; sourceTree = "<group>"; };
+		04E49F6D24797E4800D6DB36 /* MachineGunTurret.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = MachineGunTurret.hpp; path = ../../../Downloads/TowerDefense/TowerDefense/MachineGunTurret.hpp; sourceTree = "<group>"; };
+		04E49F6E24797E4800D6DB36 /* GameClassDiagramMinimized.cd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = GameClassDiagramMinimized.cd; path = ../../../Downloads/TowerDefense/TowerDefense/GameClassDiagramMinimized.cd; sourceTree = "<group>"; };
+		04E49F6F24797E4800D6DB36 /* EngineClassDiagramMinimized.cd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = EngineClassDiagramMinimized.cd; path = ../../../Downloads/TowerDefense/TowerDefense/EngineClassDiagramMinimized.cd; sourceTree = "<group>"; };
+		04E49F7024797E4800D6DB36 /* IScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IScene.cpp; path = ../../../Downloads/TowerDefense/TowerDefense/IScene.cpp; sourceTree = "<group>"; };
+		04E49F7124797E4800D6DB36 /* Sprite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Sprite.cpp; path = ../../../Downloads/TowerDefense/TowerDefense/Sprite.cpp; sourceTree = "<group>"; };
+		04E49F7224797E4800D6DB36 /* EngineClassDiagram.cd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = EngineClassDiagram.cd; path = ../../../Downloads/TowerDefense/TowerDefense/EngineClassDiagram.cd; sourceTree = "<group>"; };
+		04E49F7324797E4800D6DB36 /* IObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IObject.cpp; path = ../../../Downloads/TowerDefense/TowerDefense/IObject.cpp; sourceTree = "<group>"; };
+		04E49F7424797E4800D6DB36 /* Label.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Label.cpp; path = ../../../Downloads/TowerDefense/TowerDefense/Label.cpp; sourceTree = "<group>"; };
+		04E49F7524797E4800D6DB36 /* FireBullet.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = FireBullet.hpp; path = ../../../Downloads/TowerDefense/TowerDefense/FireBullet.hpp; sourceTree = "<group>"; };
+		04E49F7624797E4800D6DB36 /* SoldierEnemy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SoldierEnemy.cpp; path = ../../../Downloads/TowerDefense/TowerDefense/SoldierEnemy.cpp; sourceTree = "<group>"; };
+		04E49F7724797E4800D6DB36 /* PlaneEnemy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PlaneEnemy.cpp; path = ../../../Downloads/TowerDefense/TowerDefense/PlaneEnemy.cpp; sourceTree = "<group>"; };
+		04E49F7824797E4800D6DB36 /* ImageButton.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = ImageButton.hpp; path = ../../../Downloads/TowerDefense/TowerDefense/ImageButton.hpp; sourceTree = "<group>"; };
+		04E49F7924797E4800D6DB36 /* Slider.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Slider.hpp; path = ../../../Downloads/TowerDefense/TowerDefense/Slider.hpp; sourceTree = "<group>"; };
+		04E49F7A24797E4800D6DB36 /* MissileTurret.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = MissileTurret.hpp; path = ../../../Downloads/TowerDefense/TowerDefense/MissileTurret.hpp; sourceTree = "<group>"; };
+		04E49F7B24797E4900D6DB36 /* PlaneEnemy.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = PlaneEnemy.hpp; path = ../../../Downloads/TowerDefense/TowerDefense/PlaneEnemy.hpp; sourceTree = "<group>"; };
+		04E49F7C24797E4900D6DB36 /* Point.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Point.cpp; path = ../../../Downloads/TowerDefense/TowerDefense/Point.cpp; sourceTree = "<group>"; };
+		04E49F7D24797E4900D6DB36 /* packages.config */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = packages.config; path = ../../../Downloads/TowerDefense/TowerDefense/packages.config; sourceTree = "<group>"; };
+		04E49F7E24797E4900D6DB36 /* Resources.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Resources.hpp; path = ../../../Downloads/TowerDefense/TowerDefense/Resources.hpp; sourceTree = "<group>"; };
+		04E49F7F24797E4900D6DB36 /* Plane.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Plane.hpp; path = ../../../Downloads/TowerDefense/TowerDefense/Plane.hpp; sourceTree = "<group>"; };
+		04E49F8024797E4900D6DB36 /* MissileTurret.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MissileTurret.cpp; path = ../../../Downloads/TowerDefense/TowerDefense/MissileTurret.cpp; sourceTree = "<group>"; };
+		04E49F8124797E4900D6DB36 /* MissileBullet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MissileBullet.cpp; path = ../../../Downloads/TowerDefense/TowerDefense/MissileBullet.cpp; sourceTree = "<group>"; };
+		04E49F8224797E4900D6DB36 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; name = Makefile; path = ../../../Downloads/TowerDefense/TowerDefense/Makefile; sourceTree = "<group>"; };
+		04E49F8324797E4900D6DB36 /* IControl.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = IControl.hpp; path = ../../../Downloads/TowerDefense/TowerDefense/IControl.hpp; sourceTree = "<group>"; };
+		04E49F8424797E4900D6DB36 /* LOG.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = LOG.cpp; path = ../../../Downloads/TowerDefense/TowerDefense/LOG.cpp; sourceTree = "<group>"; };
+		04E49F8524797E4900D6DB36 /* resources */ = {isa = PBXFileReference; lastKnownFileType = folder; name = resources; path = ../../../Downloads/TowerDefense/TowerDefense/resources; sourceTree = "<group>"; };
+		04E49F8624797E4900D6DB36 /* GameEngine.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = GameEngine.hpp; path = ../../../Downloads/TowerDefense/TowerDefense/GameEngine.hpp; sourceTree = "<group>"; };
+		04E49F8724797E4900D6DB36 /* GameEngine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GameEngine.cpp; path = ../../../Downloads/TowerDefense/TowerDefense/GameEngine.cpp; sourceTree = "<group>"; };
+		04E49F8824797E4900D6DB36 /* LaserTurret.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = LaserTurret.cpp; path = ../../../Downloads/TowerDefense/TowerDefense/LaserTurret.cpp; sourceTree = "<group>"; };
+		04E49F8924797E4900D6DB36 /* FireBullet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FireBullet.cpp; path = ../../../Downloads/TowerDefense/TowerDefense/FireBullet.cpp; sourceTree = "<group>"; };
+		04E49F8A24797E4900D6DB36 /* Point.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Point.hpp; path = ../../../Downloads/TowerDefense/TowerDefense/Point.hpp; sourceTree = "<group>"; };
+		04E49F8B24797E4900D6DB36 /* StageSelectScene.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = StageSelectScene.hpp; path = ../../../Downloads/TowerDefense/TowerDefense/StageSelectScene.hpp; sourceTree = "<group>"; };
+		04E49F8C24797E4900D6DB36 /* TurretButton.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TurretButton.cpp; path = ../../../Downloads/TowerDefense/TowerDefense/TurretButton.cpp; sourceTree = "<group>"; };
+		04E49F8D24797E4900D6DB36 /* Plane.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Plane.cpp; path = ../../../Downloads/TowerDefense/TowerDefense/Plane.cpp; sourceTree = "<group>"; };
+		04E49F8E24797E4900D6DB36 /* LaserBullet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = LaserBullet.cpp; path = ../../../Downloads/TowerDefense/TowerDefense/LaserBullet.cpp; sourceTree = "<group>"; };
+		04E49F8F24797E4A00D6DB36 /* SoldierEnemy.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = SoldierEnemy.hpp; path = ../../../Downloads/TowerDefense/TowerDefense/SoldierEnemy.hpp; sourceTree = "<group>"; };
+		04E49F9024797E4A00D6DB36 /* PlayScene.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = PlayScene.hpp; path = ../../../Downloads/TowerDefense/TowerDefense/PlayScene.hpp; sourceTree = "<group>"; };
+		04E49F9124797E4A00D6DB36 /* MachineGunTurret.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MachineGunTurret.cpp; path = ../../../Downloads/TowerDefense/TowerDefense/MachineGunTurret.cpp; sourceTree = "<group>"; };
+		04E49F9224797E4A00D6DB36 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = ../../../Downloads/TowerDefense/TowerDefense/main.cpp; sourceTree = "<group>"; };
+		04E49F9324797E4A00D6DB36 /* IScene.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = IScene.hpp; path = ../../../Downloads/TowerDefense/TowerDefense/IScene.hpp; sourceTree = "<group>"; };
+		04E49F9424797E4A00D6DB36 /* ExplosionEffect.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ExplosionEffect.cpp; path = ../../../Downloads/TowerDefense/TowerDefense/ExplosionEffect.cpp; sourceTree = "<group>"; };
+		04E49F9524797E4A00D6DB36 /* Group.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Group.cpp; path = ../../../Downloads/TowerDefense/TowerDefense/Group.cpp; sourceTree = "<group>"; };
+		04E49F9624797E4A00D6DB36 /* StageSelectScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = StageSelectScene.cpp; path = ../../../Downloads/TowerDefense/TowerDefense/StageSelectScene.cpp; sourceTree = "<group>"; };
+		04E49F9724797E4A00D6DB36 /* TankEnemy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TankEnemy.cpp; path = ../../../Downloads/TowerDefense/TowerDefense/TankEnemy.cpp; sourceTree = "<group>"; };
+		04E49F9824797E4A00D6DB36 /* TowerDefense.vcxproj.filters */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = TowerDefense.vcxproj.filters; path = ../../../Downloads/TowerDefense/TowerDefense/TowerDefense.vcxproj.filters; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04E49EF9247979E800D6DB36 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04E49F3424797C0100D6DB36 /* liballegro_image.5.2.6.dylib in Frameworks */,
+				04E49F2224797C0100D6DB36 /* liballegro_dialog.5.2.6.dylib in Frameworks */,
+				04E49F3624797C0100D6DB36 /* liballegro_primitives.5.2.6.dylib in Frameworks */,
+				04E49F2A24797C0100D6DB36 /* liballegro_font.5.2.6.dylib in Frameworks */,
+				04E49F1E24797C0000D6DB36 /* liballegro.5.2.6.dylib in Frameworks */,
+				04E49F2624797C0100D6DB36 /* liballegro_ttf.5.2.6.dylib in Frameworks */,
+				04E49F2E24797C0100D6DB36 /* liballegro_video.5.2.6.dylib in Frameworks */,
+				04E49F3024797C0100D6DB36 /* liballegro_main.5.2.6.dylib in Frameworks */,
+				04E49F2824797C0100D6DB36 /* liballegro_audio.5.2.6.dylib in Frameworks */,
+				04E49F2424797C0100D6DB36 /* liballegro_memfile.5.2.6.dylib in Frameworks */,
+				04E49F2024797C0100D6DB36 /* liballegro_acodec.5.2.6.dylib in Frameworks */,
+				04E49F2C24797C0100D6DB36 /* liballegro_physfs.5.2.6.dylib in Frameworks */,
+				04E49F3224797C0100D6DB36 /* liballegro_color.5.2.6.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04E49EF3247979E800D6DB36 = {
+			isa = PBXGroup;
+			children = (
+				04E49EFE247979E800D6DB36 /* allegro-test */,
+				04E49EFD247979E800D6DB36 /* Products */,
+				04E49F1024797C0000D6DB36 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		04E49EFD247979E800D6DB36 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04E49EFC247979E800D6DB36 /* allegro-test.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04E49EFE247979E800D6DB36 /* allegro-test */ = {
+			isa = PBXGroup;
+			children = (
+				04E49F02247979EC00D6DB36 /* Assets.xcassets */,
+				04E49F04247979EC00D6DB36 /* MainMenu.xib */,
+				04E49F4624797E2900D6DB36 /* Allegro5Exception.cpp */,
+				04E49F4524797E2900D6DB36 /* Allegro5Exception.hpp */,
+				04E49F4724797E2900D6DB36 /* AudioHelper.cpp */,
+				04E49F3E24797E2900D6DB36 /* AudioHelper.hpp */,
+				04E49F3C24797E2900D6DB36 /* Bullet.cpp */,
+				04E49F4324797E2900D6DB36 /* Bullet.hpp */,
+				04E49F4024797E2900D6DB36 /* ClassDiagram.cd */,
+				04E49F4924797E2900D6DB36 /* ClassDiagram1.cd */,
+				04E49F3F24797E2900D6DB36 /* ClassDiagram2.cd */,
+				04E49F7224797E4800D6DB36 /* EngineClassDiagram.cd */,
+				04E49F6F24797E4800D6DB36 /* EngineClassDiagramMinimized.cd */,
+				04E49F9424797E4A00D6DB36 /* ExplosionEffect.cpp */,
+				04E49F5F24797E4700D6DB36 /* ExplosionEffect.hpp */,
+				04E49F8924797E4900D6DB36 /* FireBullet.cpp */,
+				04E49F7524797E4800D6DB36 /* FireBullet.hpp */,
+				04E49F5B24797E4700D6DB36 /* GameClassDiagram.cd */,
+				04E49F6E24797E4800D6DB36 /* GameClassDiagramMinimized.cd */,
+				04E49F8724797E4900D6DB36 /* GameEngine.cpp */,
+				04E49F8624797E4900D6DB36 /* GameEngine.hpp */,
+				04E49F9524797E4A00D6DB36 /* Group.cpp */,
+				04E49F6524797E4800D6DB36 /* Group.hpp */,
+				04E49F5D24797E4700D6DB36 /* IControl.cpp */,
+				04E49F8324797E4900D6DB36 /* IControl.hpp */,
+				04E49F6224797E4700D6DB36 /* Image.cpp */,
+				04E49F5824797E4700D6DB36 /* Image.hpp */,
+				04E49F5424797E4700D6DB36 /* ImageButton.cpp */,
+				04E49F7824797E4800D6DB36 /* ImageButton.hpp */,
+				04E49F7324797E4800D6DB36 /* IObject.cpp */,
+				04E49F5324797E4700D6DB36 /* IObject.hpp */,
+				04E49F7024797E4800D6DB36 /* IScene.cpp */,
+				04E49F9324797E4A00D6DB36 /* IScene.hpp */,
+				04E49F7424797E4800D6DB36 /* Label.cpp */,
+				047C2E5E247A191A00B2F258 /* StartScene.cpp */,
+				047C2E5F247A191A00B2F258 /* StartScene.hpp */,
+				04E49F6824797E4800D6DB36 /* Label.hpp */,
+				04E49F8E24797E4900D6DB36 /* LaserBullet.cpp */,
+				04E49F5724797E4700D6DB36 /* LaserBullet.hpp */,
+				04E49F8824797E4900D6DB36 /* LaserTurret.cpp */,
+				04E49F6B24797E4800D6DB36 /* LaserTurret.hpp */,
+				04E49F8424797E4900D6DB36 /* LOG.cpp */,
+				04E49F6924797E4800D6DB36 /* LOG.hpp */,
+				04E49F6124797E4700D6DB36 /* LoseScene.cpp */,
+				04E49F5C24797E4700D6DB36 /* LoseScene.hpp */,
+				04E49F9124797E4A00D6DB36 /* MachineGunTurret.cpp */,
+				04E49F6D24797E4800D6DB36 /* MachineGunTurret.hpp */,
+				047C2E61247A40FA00B2F258 /* NewBullet.cpp */,
+				047C2E62247A40FA00B2F258 /* NewBullet.hpp */,
+				047C2E64247A449500B2F258 /* NewGunTurret.cpp */,
+				047C2E65247A449500B2F258 /* NewGunTurret.hpp */,
+				04E49F9224797E4A00D6DB36 /* main.cpp */,
+				04E49F8224797E4900D6DB36 /* Makefile */,
+				04E49F8124797E4900D6DB36 /* MissileBullet.cpp */,
+				04E49F6A24797E4800D6DB36 /* MissileBullet.hpp */,
+				04E49F8024797E4900D6DB36 /* MissileTurret.cpp */,
+				04E49F7A24797E4800D6DB36 /* MissileTurret.hpp */,
+				04E49F7D24797E4900D6DB36 /* packages.config */,
+				04E49F8D24797E4900D6DB36 /* Plane.cpp */,
+				04E49F7F24797E4900D6DB36 /* Plane.hpp */,
+				04E49F7724797E4800D6DB36 /* PlaneEnemy.cpp */,
+				04E49F7B24797E4900D6DB36 /* PlaneEnemy.hpp */,
+				04E49F6024797E4700D6DB36 /* PlayScene.cpp */,
+				04E49F9024797E4A00D6DB36 /* PlayScene.hpp */,
+				04E49F7C24797E4900D6DB36 /* Point.cpp */,
+				04E49F8A24797E4900D6DB36 /* Point.hpp */,
+				04E49F8524797E4900D6DB36 /* resources */,
+				04E49F5E24797E4700D6DB36 /* Resources.cpp */,
+				04E49F7E24797E4900D6DB36 /* Resources.hpp */,
+				04E49F5524797E4700D6DB36 /* Slider.cpp */,
+				04E49F7924797E4800D6DB36 /* Slider.hpp */,
+				04E49F7624797E4800D6DB36 /* SoldierEnemy.cpp */,
+				04E49F8F24797E4A00D6DB36 /* SoldierEnemy.hpp */,
+				047C2E67247A502200B2F258 /* NewEnemy.cpp */,
+				047C2E68247A502200B2F258 /* NewEnemy.hpp */,
+				04E49F7124797E4800D6DB36 /* Sprite.cpp */,
+				04E49F6C24797E4800D6DB36 /* Sprite.hpp */,
+				04E49F9624797E4A00D6DB36 /* StageSelectScene.cpp */,
+				04E49F8B24797E4900D6DB36 /* StageSelectScene.hpp */,
+				04E49F9724797E4A00D6DB36 /* TankEnemy.cpp */,
+				04E49F5624797E4700D6DB36 /* TankEnemy.hpp */,
+				04E49F6324797E4700D6DB36 /* TowerDefense.vcxproj */,
+				04E49F9824797E4A00D6DB36 /* TowerDefense.vcxproj.filters */,
+				04E49F6724797E4800D6DB36 /* Turret.cpp */,
+				04E49F6624797E4800D6DB36 /* Turret.hpp */,
+				04E49F8C24797E4900D6DB36 /* TurretButton.cpp */,
+				04E49F6424797E4700D6DB36 /* TurretButton.hpp */,
+				04E49F5924797E4700D6DB36 /* WinScene.cpp */,
+				04E49F5A24797E4700D6DB36 /* WinScene.hpp */,
+				04E49F4824797E2900D6DB36 /* Collider.cpp */,
+				04E49F3B24797E2900D6DB36 /* Collider.hpp */,
+				04E49F4224797E2900D6DB36 /* DirtyEffect.cpp */,
+				04E49F3D24797E2900D6DB36 /* DirtyEffect.hpp */,
+				04E49F4424797E2900D6DB36 /* Enemy.cpp */,
+				04E49F4124797E2900D6DB36 /* Enemy.hpp */,
+				04E49F07247979EC00D6DB36 /* Info.plist */,
+				04E49F0A247979EC00D6DB36 /* allegro_test.entitlements */,
+			);
+			path = "allegro-test";
+			sourceTree = "<group>";
+		};
+		04E49F1024797C0000D6DB36 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				04E49F1224797C0000D6DB36 /* liballegro_acodec.5.2.6.dylib */,
+				04E49F1624797C0000D6DB36 /* liballegro_audio.5.2.6.dylib */,
+				04E49F1B24797C0000D6DB36 /* liballegro_color.5.2.6.dylib */,
+				04E49F1324797C0000D6DB36 /* liballegro_dialog.5.2.6.dylib */,
+				04E49F1724797C0000D6DB36 /* liballegro_font.5.2.6.dylib */,
+				04E49F1C24797C0000D6DB36 /* liballegro_image.5.2.6.dylib */,
+				04E49F1A24797C0000D6DB36 /* liballegro_main.5.2.6.dylib */,
+				04E49F1424797C0000D6DB36 /* liballegro_memfile.5.2.6.dylib */,
+				04E49F1824797C0000D6DB36 /* liballegro_physfs.5.2.6.dylib */,
+				04E49F1D24797C0000D6DB36 /* liballegro_primitives.5.2.6.dylib */,
+				04E49F1524797C0000D6DB36 /* liballegro_ttf.5.2.6.dylib */,
+				04E49F1924797C0000D6DB36 /* liballegro_video.5.2.6.dylib */,
+				04E49F1124797C0000D6DB36 /* liballegro.5.2.6.dylib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04E49EFB247979E800D6DB36 /* allegro-test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04E49F0D247979EC00D6DB36 /* Build configuration list for PBXNativeTarget "allegro-test" */;
+			buildPhases = (
+				04E49EF8247979E800D6DB36 /* Sources */,
+				04E49EF9247979E800D6DB36 /* Frameworks */,
+				04E49EFA247979E800D6DB36 /* Resources */,
+				04E49F3824797C0100D6DB36 /* Embed Libraries */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "allegro-test";
+			productName = "allegro-test";
+			productReference = 04E49EFC247979E800D6DB36 /* allegro-test.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04E49EF4247979E800D6DB36 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = Mac;
+				TargetAttributes = {
+					04E49EFB247979E800D6DB36 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 04E49EF7247979E800D6DB36 /* Build configuration list for PBXProject "allegro-test" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 04E49EF3247979E800D6DB36;
+			productRefGroup = 04E49EFD247979E800D6DB36 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04E49EFB247979E800D6DB36 /* allegro-test */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04E49EFA247979E800D6DB36 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04E49F5224797E2900D6DB36 /* ClassDiagram1.cd in Resources */,
+				04E49FA824797E4A00D6DB36 /* EngineClassDiagram.cd in Resources */,
+				04E49FA524797E4A00D6DB36 /* EngineClassDiagramMinimized.cd in Resources */,
+				04E49F9C24797E4A00D6DB36 /* GameClassDiagram.cd in Resources */,
+				04E49FB324797E4A00D6DB36 /* resources in Resources */,
+				04E49FC024797E4A00D6DB36 /* TowerDefense.vcxproj.filters in Resources */,
+				04E49F03247979EC00D6DB36 /* Assets.xcassets in Resources */,
+				04E49FAE24797E4A00D6DB36 /* packages.config in Resources */,
+				04E49F4B24797E2900D6DB36 /* ClassDiagram2.cd in Resources */,
+				04E49FA424797E4A00D6DB36 /* GameClassDiagramMinimized.cd in Resources */,
+				04E49F06247979EC00D6DB36 /* MainMenu.xib in Resources */,
+				04E49FA224797E4A00D6DB36 /* TowerDefense.vcxproj in Resources */,
+				04E49F4C24797E2900D6DB36 /* ClassDiagram.cd in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04E49EF8247979E800D6DB36 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04E49FB724797E4A00D6DB36 /* TurretButton.cpp in Sources */,
+				04E49F5024797E2900D6DB36 /* AudioHelper.cpp in Sources */,
+				04E49FA624797E4A00D6DB36 /* IScene.cpp in Sources */,
+				04E49FA324797E4A00D6DB36 /* Turret.cpp in Sources */,
+				04E49F5124797E2900D6DB36 /* Collider.cpp in Sources */,
+				04E49F9F24797E4A00D6DB36 /* PlayScene.cpp in Sources */,
+				04E49FBC24797E4A00D6DB36 /* ExplosionEffect.cpp in Sources */,
+				047C2E69247A502200B2F258 /* NewEnemy.cpp in Sources */,
+				04E49F4E24797E2900D6DB36 /* Enemy.cpp in Sources */,
+				04E49FAA24797E4A00D6DB36 /* Label.cpp in Sources */,
+				047C2E60247A191A00B2F258 /* StartScene.cpp in Sources */,
+				04E49FAB24797E4A00D6DB36 /* SoldierEnemy.cpp in Sources */,
+				04E49FB024797E4A00D6DB36 /* MissileBullet.cpp in Sources */,
+				047C2E66247A449500B2F258 /* NewGunTurret.cpp in Sources */,
+				04E49FB824797E4A00D6DB36 /* Plane.cpp in Sources */,
+				04E49F9B24797E4A00D6DB36 /* WinScene.cpp in Sources */,
+				04E49FB124797E4A00D6DB36 /* Makefile in Sources */,
+				04E49FB424797E4A00D6DB36 /* GameEngine.cpp in Sources */,
+				04E49FB524797E4A00D6DB36 /* LaserTurret.cpp in Sources */,
+				04E49FA924797E4A00D6DB36 /* IObject.cpp in Sources */,
+				04E49FA024797E4A00D6DB36 /* LoseScene.cpp in Sources */,
+				04E49FA724797E4A00D6DB36 /* Sprite.cpp in Sources */,
+				04E49FBB24797E4A00D6DB36 /* main.cpp in Sources */,
+				04E49F4A24797E2900D6DB36 /* Bullet.cpp in Sources */,
+				04E49F4D24797E2900D6DB36 /* DirtyEffect.cpp in Sources */,
+				04E49FBD24797E4A00D6DB36 /* Group.cpp in Sources */,
+				047C2E63247A40FA00B2F258 /* NewBullet.cpp in Sources */,
+				04E49FA124797E4A00D6DB36 /* Image.cpp in Sources */,
+				04E49FBA24797E4A00D6DB36 /* MachineGunTurret.cpp in Sources */,
+				04E49FB924797E4A00D6DB36 /* LaserBullet.cpp in Sources */,
+				04E49FAD24797E4A00D6DB36 /* Point.cpp in Sources */,
+				04E49F4F24797E2900D6DB36 /* Allegro5Exception.cpp in Sources */,
+				04E49F9A24797E4A00D6DB36 /* Slider.cpp in Sources */,
+				04E49FB224797E4A00D6DB36 /* LOG.cpp in Sources */,
+				04E49F9E24797E4A00D6DB36 /* Resources.cpp in Sources */,
+				04E49F9924797E4A00D6DB36 /* ImageButton.cpp in Sources */,
+				04E49F9D24797E4A00D6DB36 /* IControl.cpp in Sources */,
+				04E49FB624797E4A00D6DB36 /* FireBullet.cpp in Sources */,
+				04E49FAF24797E4A00D6DB36 /* MissileTurret.cpp in Sources */,
+				04E49FAC24797E4A00D6DB36 /* PlaneEnemy.cpp in Sources */,
+				04E49FBE24797E4A00D6DB36 /* StageSelectScene.cpp in Sources */,
+				04E49FBF24797E4A00D6DB36 /* TankEnemy.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		04E49F04247979EC00D6DB36 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04E49F05247979EC00D6DB36 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		04E49F0B247979EC00D6DB36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		04E49F0C247979EC00D6DB36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		04E49F0E247979EC00D6DB36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "allegro-test/allegro_test.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				"HEADER_SEARCH_PATHS[arch=*]" = /usr/local/include;
+				INFOPLIST_FILE = "allegro-test/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib,
+					/usr/local/Cellar/allegro/5.2.6.0/lib,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "x.allegro-test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		04E49F0F247979EC00D6DB36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "allegro-test/allegro_test.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				"HEADER_SEARCH_PATHS[arch=*]" = /usr/local/include;
+				INFOPLIST_FILE = "allegro-test/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib,
+					/usr/local/Cellar/allegro/5.2.6.0/lib,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "x.allegro-test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04E49EF7247979E800D6DB36 /* Build configuration list for PBXProject "allegro-test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04E49F0B247979EC00D6DB36 /* Debug */,
+				04E49F0C247979EC00D6DB36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04E49F0D247979EC00D6DB36 /* Build configuration list for PBXNativeTarget "allegro-test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04E49F0E247979EC00D6DB36 /* Debug */,
+				04E49F0F247979EC00D6DB36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 04E49EF4247979E800D6DB36 /* Project object */;
+}
